@@ -1,0 +1,59 @@
+/* 全要素の初期化　”*”で全体を初期化できる */
+/* *{
+    margin: 0;  
+    padding: 0;
+} */
+
+/* margin:外側の余白のこと。今回は余白をなくす 
+   padding:内側の余白。今回は無くした
+   (参考)box-sizing: border-box パーセンテージでサイズが指定できるようになる*/
+
+/* .greenBox{
+    background-color: green;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    
+} */
+/* text-align: center 水平方向の中央に配置*/
+/* ↑反映されなかった。divでは使えないのかも */
+/* 100vh 100vwだと、画面いっぱいに表示できる */
+/* background: linear-grandist(to right,指定したい色,指定したい色）
+　　　　　　　　　グラデーションできる上記は右側にグラデーション */
+
+/* .blueBox {
+    background-color: blue;
+    width: 300px;
+    margin: 0 auto;
+} */
+
+
+body{
+    height: 100vh;    /*画面に対して一杯に*/
+    display: flex;    /*ある要素に定義するだけで、その直下の要素が並列になる便利なスタイルです。
+                        これがないとalign-itemsが効かない*/
+    align-items: center;   /*垂直方向にcenter*/
+    justify-content: center;  /*水平方向にcenter*/
+    background: linear-gradient(to left top, rgb(255, 192, 251), rgb(0, 200, 255));
+}
+/* display: grid;
+place-content:centr;  */
+/* ↑これでもいける */
+/* https://zenn.dev/moneyforward/articles/css-grid-centering */
+
+.box{
+    background-color: rgba(150, 95, 202, 0.774);
+    font-size: 50px;
+    padding: 20px;
+    width: 500px;
+    height: 300px;
+}
+/* padding内側の余白 */
+
+.typeInput{
+    font-size: 40px;
+    margin: auto;
+    resize: none;
+}
+
+/*resize:noneはテキストの大きさを変えれてしまうのをなくす
