@@ -8,7 +8,7 @@
 // horはconst hor = document.getElementsByClassName("site-head")[0];
 
 // 配列を作ってその中からお題をとる
-const questionList = ["nunchaku", "kimutaku"];
+const questionList = ["ヌンチャク", "キムタク", "アロー浅岡",];
 
 // questionList[0]//nunchaku
 
